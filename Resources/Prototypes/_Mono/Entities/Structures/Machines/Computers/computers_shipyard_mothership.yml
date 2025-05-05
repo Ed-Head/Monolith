@@ -52,3 +52,13 @@
   - type: ShipyardListing
     shuttles:
     - Zephyr
+
+- type: entity
+  id: CortexCarrierComputer
+  parent: BaseCarrierComputer
+  name: cortex carrier console
+  components:
+  - type: ShipyardListing
+    shuttles:
+    - Corpsman
+    - Corpsewagon

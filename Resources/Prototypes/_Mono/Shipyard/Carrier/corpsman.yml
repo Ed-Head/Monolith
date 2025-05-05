@@ -1,0 +1,32 @@
+- type: vessel
+  id: Corpsman
+  parent: BaseVessel
+  name: CMM Corpsman
+  description: A light and nimble armored personal carrier specializing in patient extraction
+  price: 12000
+  category: Small
+  group: Custom
+  mapchecker_group_override: Shipyard  # Treat this as a Shipyard vessel for mapchecker purposes
+  shuttlePath: /Maps/_Mono/Shuttles/Carrier/corpsman.yml
+  guidebookPage: Null
+  class:
+  - Medical
+  engine:
+  - Plasma
+
+- type: gameMap
+  id: Corpsman
+  mapName: 'CCM Corpsman'
+  mapPath: /Maps/_Mono/Shuttles/Carrier/corpsman.yml
+  minPlayers: 0
+  stations:
+    Corpsman:
+      stationProto: StandardFrontierVessel
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: 'Corpsman CIV{1}'
+        nameGenerator:
+          !type:NanotrasenNameGenerator
+          prefixCreator: '14'
+      - type: StationJobs
+        availableJobs: {}

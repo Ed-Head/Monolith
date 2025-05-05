@@ -43,6 +43,13 @@
   description: zealots-of-balaam-description
   color: "#BC7F58"
 
+- type: company
+  id: CrisisCareMedical
+  form: Protagonist
+  name: Crisis Care Medical
+  description: crisis-care-medical-description
+  color: "#6FA8dC"
+
 # ====Rogue / Antag. Companies====
 - type: company
   id: TheViperGroup

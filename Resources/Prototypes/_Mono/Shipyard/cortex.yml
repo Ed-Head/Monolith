@@ -1,0 +1,34 @@
+- type: vessel
+  id: Cortex
+  parent: BaseVessel
+  name: CCM Cortex Medical Carrier
+  description: A spacious medical carrier capable of holding 2 vessels in its bay at a time
+  price: 120000
+  category: Large
+  group: Medical
+  shuttlePath: /Maps/_Mono/Shuttles/cortex.yml
+  guidebookPage: Null
+  class:
+  - Medical
+  engine:
+  - AME
+
+- type: gameMap
+  id: Cortex
+  mapName: 'CCM Cortex'
+  mapPath: /Maps/_Mono/Shuttles/cortex.yml
+  minPlayers: 0
+  stations:
+    Cortex:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Cortex CIV{1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            Contractor: [ 0, 0 ]
+            Pilot: [ 0, 0 ]
+            Mercenary: [ 0, 0 ]
