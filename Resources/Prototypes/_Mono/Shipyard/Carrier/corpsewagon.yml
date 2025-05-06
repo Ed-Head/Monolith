@@ -2,7 +2,7 @@
   id: Corpsewagon
   parent: BaseVessel
   name: CMM Corpsewagon
-  description: A small but spacious vessel for collecting medical bounties off wrecks
+  description: A small but spacious vessel for collecting bodies in low threat enviroments.
   price: 10000
   category: Small
   group: Custom

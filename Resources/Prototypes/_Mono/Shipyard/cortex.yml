@@ -1,9 +1,9 @@
 - type: vessel
   id: Cortex
   parent: BaseVessel
-  name: CCM Cortex Medical Carrier
-  description: A spacious medical carrier capable of holding 2 vessels in its bay at a time
-  price: 120000
+  name: CCM Cortex
+  description: A peculiarly shaped and robustly equipped light medical carrier, capable of holding 2 vessels in its bay.
+  price: 160000
   category: Large
   group: Medical
   shuttlePath: /Maps/_Mono/Shuttles/cortex.yml
