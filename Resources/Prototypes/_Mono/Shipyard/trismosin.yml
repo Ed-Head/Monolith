@@ -1,0 +1,34 @@
+- type: vessel
+  id: Trismosin
+  parent: BaseVessel
+  name: CCM Trismosin
+  description: The suprisingly decent union between an outdated cargo hull and a medical carrier. Heavily armored, lightly armed, and robustly equipped
+  price: 160000
+  category: Large
+  group: Medical
+  shuttlePath: /Maps/_Mono/Shuttles/trismosin.yml
+  guidebookPage: Null
+  class:
+  - Medical
+  engine:
+  - AME
+
+- type: gameMap
+  id: Trismosin
+  mapName: 'CCM Trismosin'
+  mapPath: /Maps/_Mono/Shuttles/trismosin.yml
+  minPlayers: 0
+  stations:
+    Trismosin:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Trismosin CIV{1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            Contractor: [ 0, 0 ]
+            Pilot: [ 0, 0 ]
+            Mercenary: [ 0, 0 ]
